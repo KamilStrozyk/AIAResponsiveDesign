@@ -1,1 +1,13 @@
-null
+.header {
+  font-size: 24px;
+}
+
+.item {
+  padding: 15px;
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  display: flex;
+}

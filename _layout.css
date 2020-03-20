@@ -7,14 +7,43 @@ body {
   background-color: white;
   color: black;
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+  margin: 15px;
+  margin-top: 10px;
+}
+
+.site-title {
+  font-size: 32px;
+}
+
+.base-content, .site-container, .content {
+  margin: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+
 .site-container {
   flex: 1 0 auto;
-  margin: 20px;
+}
+
+.content {
+  margin-bottom: 0px;
+}
+
+.site-title {
+  padding-top: 50px;
 }
 
 footer {
@@ -24,7 +53,7 @@ footer {
   border-top: 2px solid black;
   padding: 20px;
   padding-top: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
   flex-flow: column;
   flex-shrink: 0;
 }

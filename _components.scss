@@ -1,0 +1,14 @@
+@import'_base';
+.header {
+    font-size: $header-font-size;
+}
+
+.item {
+    padding: 15px;
+}
+
+.image {
+    width: 120px;
+    height: 120px;
+    display: flex;
+}

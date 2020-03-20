@@ -13,9 +13,40 @@ body {
     flex-direction: column;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 50px;
+    margin: $margin;
+    margin-top: 10px;
+}
+
+.site-title {
+    font-size: $title-font-size;
+}
+
+.base-content {
+    margin: $margin;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+}
+
 .site-container {
+    @extend .base-content;
     flex: 1 0 auto;
-    margin: 20px;
+}
+
+.content {
+    @extend .base-content;
+    margin-bottom: 0px;
+}
+
+.site-title {
+    padding-top: 50px;
 }
 
 footer {
@@ -25,7 +56,7 @@ footer {
     border-top: 2px solid $border-color;
     padding: 20px;
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: $margin;
     flex-flow: column;
     flex-shrink: 0;
     .item {
