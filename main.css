@@ -152,7 +152,7 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  padding: 0px 10%;
+  padding: 0px 20px;
   margin: 15px;
   margin-top: 10px;
 }
@@ -177,7 +177,6 @@ nav {
 
 .content {
   margin-bottom: 0px;
-  display: flex;
   flex-direction: row;
 }
 
@@ -222,6 +221,12 @@ footer .name {
   .menu-selector {
     display: none;
   }
+  .content {
+    display: flex;
+  }
+  .article {
+    margin: 0px 20px;
+  }
 }
 
 /*Mobile*/
@@ -232,6 +237,9 @@ footer .name {
   .menu {
     display: none;
   }
+  .article {
+    margin: 20px;
+  }
 }
 
 /*Tablet*/
@@ -239,8 +247,18 @@ footer .name {
   .menu {
     display: none;
   }
-  .site-title {
-    display: none;
+  .content {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .article:first-of-type {
+    flex: 0 1 100%;
+    margin: 20px;
+  }
+  .article {
+    flex: 1 0 45%;
+    margin: 20px;
   }
 }
 
@@ -252,11 +270,12 @@ footer .name {
   align-items: center;
   align-self: flex-end;
   flex-grow: 2;
-  margin: -30px -30px 30px;
   padding: 10px;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   max-width: 100px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .header-2 {
@@ -267,11 +286,12 @@ footer .name {
   align-items: center;
   align-self: flex-end;
   flex-grow: 2;
-  margin: -30px -30px 30px;
   padding: 10px;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   max-width: 100px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .header-3 {
@@ -282,11 +302,12 @@ footer .name {
   align-items: center;
   align-self: flex-end;
   flex-grow: 2;
-  margin: -30px -30px 30px;
   padding: 10px;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   max-width: 100px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .item {
@@ -300,9 +321,10 @@ footer .name {
 }
 
 .article {
-  padding: 30px;
-  margin: 0px 20px;
   background-color: #e0e4cc;
   border: 2px solid black;
-  width: 30%;
+}
+
+.article .item {
+  padding: 30px;
 }
