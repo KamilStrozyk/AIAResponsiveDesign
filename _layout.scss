@@ -73,9 +73,14 @@ footer {
     justify-content: flex-end;
     flex-grow: 2;
     .item {
-        border: 1px $border-color;
+        margin-top: 35px;
+        border: 2px solid $border-color;
         background-color: $primary-color;
-        border-radius: 2px;
+        border-radius: 20px;
+        height: 30px;
+        width: 30px;
+        font-size: $title-font-size;
+        text-align: center;
     }
 }
 
